@@ -1,0 +1,126 @@
+
+*{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    text-align: center;
+    margin: 0;
+    min-height: 100vh;
+    background: url('bg.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    animation-name: back;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes back {
+    0% {
+        background-size: 100% auto;
+    }
+    50% {
+        background-size: 110% auto;
+    }
+    100% {
+        background-size: 100% auto;
+    }
+}
+
+h1 {
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-bottom: solid 1px rgb('255', 255, 255,0.4);
+    font-size: 50px;
+    letter-spacing: 1.8px;
+    color: #EA2;
+    background-color: rgba(0,0,0,0.6);
+}
+h2 {
+    color: #EA2;
+}
+
+#grid {
+    margin: 30px auto;
+    width: 60%;
+
+}
+
+#grid input {
+    width: 100px;
+    height: 60px;
+    font-size: 14pt;
+    font-weight: bold;
+    cursor: pointer;
+    border: solid 1px #AAA;
+    color: #EA2;
+    display: inline-block;
+    margin: 4px 2px;
+    transition: .3s;
+    background-color: rgba(0,0,0,0.6);
+}
+
+#grid input:hover {
+    transform: scale(1.1);
+    color: #000;
+    background-color: #EA2;
+    transition: .3s;
+    border: none;
+}
+
+#selection {
+    margin: 30px;
+}
+
+#selection input {
+    background-color: rgba(0,0,0,0.6);
+    width: 130px;
+    height: 80px;
+    font-size: 14pt;
+    font-weight: bold;
+    cursor: pointer;
+    color: #EA2;
+    display: inline-block;
+    margin: 4px 2px;
+    transition: .3s;
+    border: #EA2 1px solid;
+}
+
+#selection input:hover {
+    transform: scale(1.1);
+    color: #000;
+    transition: .3s;
+}
+
+input[type='submit'] {
+    visibility: hidden;
+}
+
+form input {
+    width: 300px;
+    padding: 15px;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    background-color: #EA2;
+    font-weight: bold;
+    transition: .3s; 
+    border: none;
+}
+
+form input:hover {
+    transform: scale(1.1);
+    width: 300px;
+    padding: 15px;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    background-color: #EA2;
+    font-weight: bold;
+    transition: .3s;
+    border: rgba(0,0,0,0.6) 1px solid;
+
+}
